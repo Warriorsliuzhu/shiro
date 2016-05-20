@@ -1,0 +1,4 @@
+.idea/
+shiro.iml
+target
+src/main/resources/config.properties
