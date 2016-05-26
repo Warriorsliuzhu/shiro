@@ -8,7 +8,7 @@
 </head>
 <body data-server-time="${.now?long?c}">
 
-<h1 style="text-align: center">赵四，你好！！！</h1>
+<#--<h1 style="text-align: center">赵四，你好！！！</h1>-->
 <#include "common-js.ftl">
 </body>
 </html>

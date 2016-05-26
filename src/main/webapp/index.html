@@ -5,30 +5,14 @@
 </head>
 
 <body>
-<h1>赵四，你好！！！</h1>
-
 <div class="container-fluid">
     <div class="row-fluid" id="my_view">
-        <div class="span12">
-            <table class="table table-bordered">
-                <tr>
-                    <td>id</td>
-                    <td v-for="sensor in sensors">
-                        {{sensor.cnName}}
-                    </td>
-                    <td>操作</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td v-for="sensor in sensors">
-                        <input type="text" v-model="sensors[sensor.enName]"/>
-                        <input type="text" value="{sensor.enName}"/>
-                    </td>
-                    <td><button class="btn-mini" v-on:click="addTodo">+</button></td>
-                </tr>
-
-            </table>
-        </div>
+        <h3>hello shiro</h3>
+        <!--<div class="span12">-->
+            <!--<table class="table table-bordered">-->
+<!---->
+            <!--</table>-->
+        <!--</div>-->
     </div>
 </div>
 <!--<div id="my_view">-->
@@ -40,42 +24,6 @@
 <script type="text/javascript" src="assets/vue/1.0/vue.js"></script>
 <script type="text/javascript" src="assets/vue/1.0/vue-resource.min.js"></script>
 <script type="text/javascript">
-    $(function () {
-        new Vue({
-            el: '#my_view',
-            data: {
-                sensors: []
-
-            },
-
-            methods: {
-                addTodo: function () {
-                    var text = this;
-//                    if (text) {
-//                        this.todos.push({ text: text })
-//                        this.newTodo = ''
-//                    }
-                },
-                removeTodo: function (index) {
-                    this.todos.splice(index, 1)
-                }
-            },
-
-            ready: function () {
-
-                // GET request
-                this.$http.get('getSensors',function (data) {
-                    // set data on vm
-                    console.log(data);
-                    this.$set('sensors', data)
-
-                }).error(function (data, status, request) {
-                            // handle error
-                })
-
-            }
-        })
-    });
 </script>
 </body>
 </html>

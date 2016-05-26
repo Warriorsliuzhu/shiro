@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <#--<meta charset="utf-8" http-equiv="content-type" content="text/html">-->
     <#include "common-css.ftl">
 </head>
 <body data-server-time="${.now?long?c}">

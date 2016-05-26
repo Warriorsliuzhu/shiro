@@ -42,7 +42,7 @@ public class LoginController {
 
     @RequestMapping(value = "login")
     public String manageView(Model model) {
-        return "register";
+        return "login";
     }
 
     @RequestMapping(value = "register")
